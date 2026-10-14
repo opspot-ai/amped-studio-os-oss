@@ -1,0 +1,11 @@
+{
+  "name": "@amped-studio-os/storage",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@amped-studio-os/contracts": "workspace:*",
+    "postgres": "3.4.9"
+  }
+}

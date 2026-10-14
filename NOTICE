@@ -1,0 +1,7 @@
+Amped Studio OS
+
+Copyright (c) 2026 Colton Harris
+
+This project uses third-party dependencies. Their license texts and required notices are supplied by their respective authors. This project license does not relicense dependencies.
+
+The optional Sharp image-processing dependency distributes libvips binaries under LGPL-3.0-or-later. Its license and source offer remain with that package.

@@ -1,0 +1,75 @@
+schemaVersion: 1.0.0
+venture:
+  id: venture_example_b
+  slug: example-b
+  name: Example Company B
+  owner: Example Owner
+  owningRepo: .
+  declaredState: candidate
+founder:
+  thesis:
+    status: hypothesis
+    value: Synthetic fixture for contract-shape examples only; not a market claim.
+    sourceRefs: [example_source_b]
+    evidenceRefs: []
+    confidence: 0.2
+    observedAt: "2026-01-01T00:00:00Z"
+    freshForHours: 0
+    supersedes: []
+  budget: { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  timeHorizon: { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  stopConditions:
+    - { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  boundaries:
+    - No sends outside user-owned test endpoints or spend without explicit approval.
+  approvals: []
+authorities:
+  product: [example_source_b]
+  customer: []
+  company: []
+  finance: []
+  payment: []
+  fulfillment: []
+assertions:
+  buyer: {}
+  offer: {}
+  acquisition: {}
+  product: {}
+  payment: {}
+  fulfillment: {}
+  policy: {}
+  economics: {}
+  proof: {}
+policy:
+  senderIdentity: { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  suppressionSource: { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  caps: { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  quietHours: { status: missing, sourceRefs: [], evidenceRefs: [], supersedes: [] }
+  killSwitchPath: engine://venture_example_b/kill-switch
+  enabledGateClasses: [safe-internal-read-only]
+  forbiddenActions: [external send, public post, money movement]
+  dataRetention: Example only; configure your retention policy before real use.
+metrics: []
+plays:
+  - id: play_example_b_front_door_comprehension_v1
+    name: Synthetic planning example
+    purpose: Practice a bounded planning path using synthetic fixture data only.
+    ownerRole: researcher
+    mode: internal-read-only
+    gateClass: safe-internal-read-only
+    reusable: false
+    expectedProof: A synthetic example receipt only.
+    question: What evidence is missing before this example can advance?
+    sourceRefs: [example_source_b]
+    successThreshold: Unknowns are preserved rather than invented.
+    failureThreshold: Any external action is requested.
+sources:
+  - id: example_source_b
+    kind: file
+    authority: product
+    path: ventures/example-b/pack.yaml
+    observedAt: "2026-01-01T00:00:00Z"
+    freshForHours: 0
+    confidence: 0
+    rights: owned
+    description: Fictional fixture only; not market validation or a customer record.

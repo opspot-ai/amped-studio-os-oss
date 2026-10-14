@@ -1,0 +1,17 @@
+{
+  "idea": "Synthetic fixture only; this does not describe a real market or customer need.",
+  "name": "Example Company",
+  "owner": "Example Owner",
+  "destination": "planning-exercise",
+  "horizonDays": 30,
+  "budgetCents": 1000,
+  "constraints": [
+    "Use synthetic data and operator-owned test endpoints only."
+  ],
+  "killConditions": [
+    "Stop when the bounded budget is exhausted without authoritative evidence."
+  ],
+  "permissions": "Planning examples only. External sends, publication, credential changes, and money movement require exact approval.",
+  "requestedAt": "2026-07-20T00:00:00.000Z",
+  "idempotencyKey": "example-bootstrap-v1"
+}

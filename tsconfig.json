@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "jsx": "preserve",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@amped-studio-os/contracts": ["packages/contracts/src/index.ts"],
+      "@amped-studio-os/packs": ["packages/packs/src/index.ts"],
+      "@amped-studio-os/policy": ["packages/policy/src/index.ts"],
+      "@amped-studio-os/storage": ["packages/storage/src/index.ts"],
+      "@amped-studio-os/dispatch": ["packages/dispatch/src/index.ts"],
+      "@amped-studio-os/adapters": ["packages/adapters/src/index.ts"],
+      "@amped-studio-os/domain": ["packages/domain/src/index.ts"]
+    },
+    "types": ["node"]
+  },
+  "include": ["apps/**/*.ts", "apps/**/*.tsx", "packages/**/*.ts", "scripts/**/*.ts", "tests/**/*.ts", "vitest.config.ts", "eslint.config.mjs"],
+  "exclude": ["node_modules", ".next", "dist", "data", "backups", "apps/studio", "apps/admin"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@amped-studio-os/domain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@amped-studio-os/contracts": "workspace:*",
+    "@amped-studio-os/packs": "workspace:*",
+    "@amped-studio-os/policy": "workspace:*",
+    "@amped-studio-os/storage": "workspace:*",
+    "@amped-studio-os/dispatch": "workspace:*",
+    "@amped-studio-os/adapters": "workspace:*",
+    "zod": "4.4.3"
+  }
+}

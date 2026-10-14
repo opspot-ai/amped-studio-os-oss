@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm --filter @amped-studio-os/studio build:control && pnpm --filter @amped-studio-os/control build",
+  "outputDirectory": "apps/control/.next",
+  "crons": [
+    {
+      "path": "/api/cron/worker",
+      "schedule": "* * * * *"
+    }
+  ]
+}
